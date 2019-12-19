@@ -1,0 +1,24 @@
+.blog {
+  margin: 30px 0 30px 0;
+
+  .heading {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'Lora', 'Times New Roman', serif;
+    line-height: 1.2;
+  }
+  .subheading {
+    font-weight: 300;font-size: 1.75rem;
+    line-height: 1.2;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .info {
+    color: darkgrey;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: #868e96;
+    line-height: 1.5;
+    font-family: 'Lora', 'Times New Roman', serif;
+  }
+}

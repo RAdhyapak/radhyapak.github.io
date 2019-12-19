@@ -1,0 +1,53 @@
+
+.home_hero {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vertical-align {
+    margin-top: 200px;
+}
+.heading {
+    font-size: 50px;
+    color: white;
+}
+.subheading {
+    font-size: 30px;
+    color: white;
+}
+
+.subinfo { 
+    font-size: 18px;
+    color: white;
+    font-style: italic;
+    line-height: 1.5;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+@media only screen and (max-width: 600px) {
+.vertical-align {
+    margin-top: 25vh;
+}}
+
+@media only screen and (min-width: 600px) {
+.vertical-align {
+    margin-top: 30vh;
+}}
+
+@media only screen and (min-width: 768px) {
+.vertical-align {
+    margin-top: 35vh;
+}}
+
+@media only screen and (min-width: 992px) {
+.vertical-align {
+    margin-top: 40vh;
+}}
+
+@media only screen and (min-width: 1200px) {
+.vertical-align {
+    margin-top: 45vh;
+}}
