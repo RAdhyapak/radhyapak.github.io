@@ -16,7 +16,7 @@ export class HeroComponent implements OnInit {
 
   ngOnInit() {
     (document.querySelector('#heroContainer') as HTMLElement).style.backgroundImage =
-    'url("../../../assets/images/' + this.img + '")';
+    'url("assets/images/' + this.img + '")';
    }
 
 }
