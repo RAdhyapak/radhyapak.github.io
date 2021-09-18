@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { VerticalSpaceComponent } from './vertical-space.component';
 
@@ -6,7 +6,7 @@ describe('VerticalSpaceComponent', () => {
   let component: VerticalSpaceComponent;
   let fixture: ComponentFixture<VerticalSpaceComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ VerticalSpaceComponent ]
     })
