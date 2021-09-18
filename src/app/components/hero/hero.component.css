@@ -11,11 +11,11 @@
     margin-top: 200px;
 }
 .heading {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
 .subheading {
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 
@@ -27,27 +27,79 @@
     font-family: 'Lora', 'Times New Roman', serif;
 }
 
+.profileImage {
+    border-radius: 50%;
+    width: 20%;
+    border: 3px solid white;
+    margin-bottom: 2%;
+}
+
 @media only screen and (max-width: 600px) {
 .vertical-align {
-    margin-top: 25vh;
+    margin-top: 30vh;
+}
+.profileImage {
+    width: 45%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 30px;
 }}
 
 @media only screen and (min-width: 600px) {
 .vertical-align {
     margin-top: 30vh;
+}
+.profileImage {
+    width: 35%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 30px;
 }}
 
 @media only screen and (min-width: 768px) {
 .vertical-align {
-    margin-top: 35vh;
+    margin-top: 25vh;
+}
+.profileImage {
+    width: 35%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 30px;
 }}
 
 @media only screen and (min-width: 992px) {
 .vertical-align {
-    margin-top: 40vh;
+    margin-top: 25vh;
+}
+.profileImage {
+    width: 30%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 25px;
 }}
 
 @media only screen and (min-width: 1200px) {
 .vertical-align {
-    margin-top: 45vh;
+    margin-top: 25vh;
+}
+.profileImage {
+    width: 20%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 25px;
 }}
