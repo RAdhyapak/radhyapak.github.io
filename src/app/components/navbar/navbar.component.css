@@ -18,7 +18,7 @@
     color: white !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .dark-background {
         transition: background 500ms ease-out;
         background-color: black !important;

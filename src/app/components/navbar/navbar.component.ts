@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    if (window.outerWidth > 768 && this.location.isCurrentPathEqualTo('/')) {
+    if (window.outerWidth > 600 && this.location.isCurrentPathEqualTo('/')) {
     const element = document.querySelector('.navbar');
     const scrolledOverElement = document.querySelector('.home_hero .heading');
     const sectionOneOptions = {
