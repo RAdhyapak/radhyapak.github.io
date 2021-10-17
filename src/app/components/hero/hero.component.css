@@ -7,6 +7,14 @@
     background-repeat: no-repeat;
 }
 
+#heroContainer {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../../assets/images/20210805_125632.jpg);
+}
+
 .vertical-align {
     margin-top: 200px;
 }
@@ -17,6 +25,7 @@
 .subheading {
     font-size: 25px;
     color: white;
+    font-family: sans-serif !important;
 }
 
 .subinfo { 

@@ -1,6 +1,8 @@
 import { Component, OnInit, HostListener, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, RoutesRecognized } from '@angular/router';
+import { faHome, faPhone, faBookOpen, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { ToastService } from 'src/app/services/toast.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,8 +13,12 @@ import { Router, RoutesRecognized } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   @ViewChildren('myStory') myStory: QueryList<ElementRef>;
+  faHome = faHome;
+  faStory = faBookOpen;
+  faContact = faPhone;
+  faResume = faAddressCard;
 
-  constructor(private location: Location, private router: Router) { }
+  constructor(private location: Location, private router: Router, public toastService: ToastService) { }
 
   ngOnInit() {
     const element = document.querySelector('.navbar');
@@ -47,15 +53,21 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  scrollToStory() {
-    let element = document.querySelector('#my-story');
+
+  scrollToId(id: string) {
+    let element = document.querySelector(id);
     if (element === null) {
       this.router.navigateByUrl('/').then(() => {
-        element = document.querySelector('#my-story');
+        element = document.querySelector(id);
         element.scrollIntoView({behavior: 'smooth', inline: 'start'});
       });
     } else {
       element.scrollIntoView({behavior: 'smooth', inline: 'start'});
     }
+
+    if (id === '#contact-me') {
+      this.toastService.show('Hey there! Please connect with me on LinkedIn.');
+    }
   }
+
 }

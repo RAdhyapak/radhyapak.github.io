@@ -6,23 +6,28 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item active" (click)="scrollToId('#heroContainer')">
+          <a class="nav-link">
+            <fa-icon [icon]="faHome"></fa-icon> Home<span class="sr-only">(current)</span>
+          </a>
         </li>
         &nbsp;
         &nbsp;
-        <li class="nav-item" (click)="scrollToStory()">
-          <a class="nav-link" >My Story</a>
+        <li class="nav-item" (click)="scrollToId('#my-story')">
+          <a class="nav-link">
+            <fa-icon [icon]="faStory"></fa-icon> My Story</a>
+        </li>
+        &nbsp;
+        &nbsp;
+        <li class="nav-item" (click)="scrollToId('#contact-me')">
+          <a class="nav-link">
+            <fa-icon [icon]="faContact"></fa-icon> Contact</a>
         </li>
         &nbsp;
         &nbsp;
         <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-        &nbsp;
-        &nbsp;
-        <li class="nav-item">
-          <a class="nav-link" href="/blogs">Resume</a>
+          <a class="nav-link" href="/blogs">
+            <fa-icon [icon]="faResume"></fa-icon> Resume</a>
         </li>
       </ul>
     </div>

@@ -16,6 +16,9 @@ import { SubmitSuccessComponent } from './components/submit-success/submit-succe
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { ToastComponent } from './components/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +35,15 @@ import { BlogListComponent } from './components/blog-list/blog-list.component';
     SubmitSuccessComponent,
     BlogComponent,
     BlogsComponent,
-    BlogListComponent
+    BlogListComponent,
+    TimelineComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
