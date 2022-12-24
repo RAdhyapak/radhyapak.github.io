@@ -109,6 +109,12 @@ li:nth-child(1) {
         color: #7cba01;
     }
 }
+li:nth-child(5) {
+    border-top: 30px solid #f54957;
+    h2 {
+        color: #f54957;
+    }
+}
 
 h5 {
     color: #007bff;
@@ -148,13 +154,6 @@ li.timeline-item::before {
 }
 
 
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
 // body {
 //     background: #E8CBC0;
 //     background: -webkit-linear-gradient(to right, #E8CBC0, #636FA4);
@@ -164,4 +163,9 @@ li.timeline-item::before {
 
 .text-gray {
     color: #999;
+}
+
+
+p {
+    font-size: 18px;
 }

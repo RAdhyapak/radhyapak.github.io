@@ -12,7 +12,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.2)
     ),
-    url(../../../assets/images/20210805_125632.jpg);
+    url(../../../assets/images/introImage2.jpg);
 }
 
 .vertical-align {
@@ -29,10 +29,11 @@
 }
 
 .subinfo { 
-    font-size: 18px;
+    font-size: 24px;
     color: white;
-    font-style: italic;
+    /* font-style: italic; */
     line-height: 1.5;
+    background-color: #0970ed;
     font-family: 'Lora', 'Times New Roman', serif;
 }
 
