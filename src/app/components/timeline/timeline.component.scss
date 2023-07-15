@@ -127,6 +127,9 @@ h2, h5 {
 li.timeline-item {
     margin: 30px 0;
 }
+li.timeline-item p {
+    text-align: justify;
+}
 
 /* Timeline item arrow */
 .timeline-arrow {
