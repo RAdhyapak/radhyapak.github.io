@@ -67,7 +67,7 @@ export class NavbarComponent implements OnInit {
     }
 
     if (id === '#contact-me') {
-      this.toastService.show('Hey there! Please feel free to reach out to me on LinkedIn.');
+      this.toastService.show('Hey there! Please feel free to reach out to me on LinkedIn or send me an email');
     }
   }
 
