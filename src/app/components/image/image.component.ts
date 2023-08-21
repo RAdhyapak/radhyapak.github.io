@@ -9,6 +9,8 @@ export class ImageComponent implements OnInit {
   @Input() imgSrc: string;
   @Input() imgCaption: string;
   @Input() imgHref: string;
+  @Input() imgHeight: string = "60";
+  @Input() imgWidth: string = "60";
 
   constructor() { }
 

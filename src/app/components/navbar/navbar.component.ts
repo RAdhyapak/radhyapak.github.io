@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, RoutesRecognized } from '@angular/router';
-import { faHome, faPhone, faBookOpen, faAddressCard, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faPhone, faBookOpen, faAddressCard, faLaptopCode, faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { ToastService } from 'src/app/services/toast.service';
 
 @Component({
@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
   faHome = faHome;
   faStory = faBookOpen;
   faSkills = faLaptopCode;
+  faCerts = faCertificate;
   faContact = faPhone;
   faResume = faAddressCard;
 
