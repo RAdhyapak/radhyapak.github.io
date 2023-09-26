@@ -74,7 +74,7 @@
 
 @media only screen and (min-width: 768px) {
 .vertical-align {
-    margin-top: 25vh;
+    margin-top: 30vh;
 }
 .profileImage {
     width: 35%;
@@ -88,7 +88,7 @@
 
 @media only screen and (min-width: 992px) {
 .vertical-align {
-    margin-top: 25vh;
+    margin-top: 30vh;
 }
 .profileImage {
     width: 30%;
@@ -102,7 +102,7 @@
 
 @media only screen and (min-width: 1200px) {
 .vertical-align {
-    margin-top: 25vh;
+    margin-top: 30vh;
 }
 .profileImage {
     width: 20%;
