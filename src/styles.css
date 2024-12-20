@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1, h2, h3, h4, h5, a, span, p {
+    font-family: 'Open sans';
+}
+
+a {
+    cursor: pointer;
+}
+
+ button {
+    -webkit-linear-gradient: (0deg, #1da0f9 0%, #49c0fc 100%) !important;
+ }

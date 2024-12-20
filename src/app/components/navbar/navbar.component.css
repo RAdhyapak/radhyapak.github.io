@@ -1,0 +1,26 @@
+.navbar-font {
+    font-weight: 500;
+}
+
+.bg-dark {
+    transition: background 500ms ease-out;
+    background-color: black !important;
+    opacity: 0.96;
+}
+.navbar {
+    transition: background 500ms ease-out;
+}
+
+.nav-link {
+    color: lightgray !important;
+}
+.nav-link:hover {
+    color: white !important;
+}
+
+@media screen and (max-width: 600px) {
+    .dark-background {
+        transition: background 500ms ease-out;
+        background-color: black !important;
+    }
+} 

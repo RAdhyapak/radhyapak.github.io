@@ -1,0 +1,115 @@
+
+.home_hero {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#heroContainer {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../../assets/images/introImage2.jpg);
+}
+
+.vertical-align {
+    margin-top: 200px;
+}
+.heading {
+    font-size: 40px;
+    color: white;
+}
+.subheading {
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif !important;
+}
+
+.subinfo { 
+    font-size: 24px;
+    color: white;
+    /* font-style: italic; */
+    line-height: 1.5;
+    /* background-color: #0970ed; */
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: 20%;
+    border: 3px solid white;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+.vertical-align {
+    margin-top: 30vh;
+}
+.profileImage {
+    width: 45%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 30px;
+}}
+
+@media only screen and (min-width: 600px) {
+.vertical-align {
+    margin-top: 30vh;
+}
+.profileImage {
+    width: 35%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 30px;
+}}
+
+@media only screen and (min-width: 768px) {
+.vertical-align {
+    margin-top: 30vh;
+}
+.profileImage {
+    width: 35%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 30px;
+}}
+
+@media only screen and (min-width: 992px) {
+.vertical-align {
+    margin-top: 30vh;
+}
+.profileImage {
+    width: 30%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 25px;
+}}
+
+@media only screen and (min-width: 1200px) {
+.vertical-align {
+    margin-top: 30vh;
+}
+.profileImage {
+    width: 20%;
+}
+.heading {
+    font-size: 40px;
+}
+.subheading {
+    font-size: 25px;
+}}

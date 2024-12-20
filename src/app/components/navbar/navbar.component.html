@@ -1,0 +1,46 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark dark-background" (scroll)="onWindowScroll($event);">
+  <a class="navbar-brand ms-3" href="">Rohan Adhyapak</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item active" (click)="scrollToId('#heroContainer')">
+        <a class="nav-link">
+          <fa-icon [icon]="faHome"></fa-icon> Home<span class="sr-only">(current)</span>
+        </a>
+      </li>
+      &nbsp;
+      &nbsp;
+      <li class="nav-item" (click)="scrollToId('#my-story')">
+        <a class="nav-link">
+          <fa-icon [icon]="faStory"></fa-icon> My Career</a>
+      </li>
+      &nbsp;
+      &nbsp;
+      <li class="nav-item" (click)="scrollToId('#skills')">
+        <a class="nav-link">
+          <fa-icon [icon]="faSkills"></fa-icon> Skills</a>
+      </li>
+      &nbsp;
+      &nbsp;
+      <li class="nav-item" (click)="scrollToId('#certs')">
+        <a class="nav-link">
+          <fa-icon [icon]="faCerts"></fa-icon> Certifications</a>
+      </li>
+      &nbsp;
+      &nbsp;
+      <li class="nav-item" (click)="scrollToId('#contact-me')">
+        <a class="nav-link">
+          <fa-icon [icon]="faContact"></fa-icon> Contact</a>
+      </li>
+      &nbsp;
+      &nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="https://rohanadhyapak.page.link/resume">
+          <fa-icon [icon]="faResume"></fa-icon> Resume</a>
+      </li>
+    </ul>
+  </div>
+</nav>
