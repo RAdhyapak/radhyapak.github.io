@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, ViewChild, ViewChildren, QueryList, TemplateRef } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, RoutesRecognized } from '@angular/router';
 import { faHome, faPhone, faBookOpen, faAddressCard, faLaptopCode, faCertificate } from '@fortawesome/free-solid-svg-icons';
@@ -71,9 +71,13 @@ export class NavbarComponent implements OnInit {
       element.scrollIntoView({behavior: 'smooth', inline: 'start'});
     }
 
-    if (id === '#contact-me') {
-      this.toastService.show('Hey there! Please feel free to reach out to me on LinkedIn or send me an email');
-    }
+    // if (id === '#contact-me') {
+    //   this.toastService.show('Hey there! Please feel free to reach out to me on LinkedIn or send me an email');
+    // }
+  }
+
+  showStandard(template: TemplateRef<any>) {
+    this.toastService.show({ template });
   }
 
 }

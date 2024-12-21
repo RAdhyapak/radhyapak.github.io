@@ -1,0 +1,9 @@
+:host {
+    display: block;
+    position: fixed;
+    top: auto;
+    bottom: 50px;
+    right: 0;
+    padding: 1rem;
+    z-index: 1200;
+  }

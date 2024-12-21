@@ -4,6 +4,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+	<ng-template #standardTpl> Hey There! Please feel free to reach out to me on LinkedIn. </ng-template>
   <div class="navbar-collapse collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item active" (click)="scrollToId('#heroContainer')">
@@ -31,7 +32,7 @@
       </li>
       &nbsp;
       &nbsp;
-      <li class="nav-item" (click)="scrollToId('#contact-me')">
+      <li class="nav-item" (click)="scrollToId('#contact-me');showStandard(standardTpl)">
         <a class="nav-link">
           <fa-icon [icon]="faContact"></fa-icon> Contact</a>
       </li>
