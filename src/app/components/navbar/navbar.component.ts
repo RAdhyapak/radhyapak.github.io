@@ -35,29 +35,29 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(e: any) {
-    if (window.outerWidth > 600 && this.location.isCurrentPathEqualTo('/')) {
-    const element = document.querySelector('.navbar');
-    const scrolledOverElement = document.querySelector('.home_hero .heading');
-    const sectionOneOptions = {
-      rootMargin: '-120px 0px 0px 0px'
-    };
-    const sectionOneObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          element?.classList.add('bg-dark');
-        } else {
-          element?.classList.remove('bg-dark');
-        }
-      });
-    }, sectionOneOptions);
+  // @HostListener('window:scroll', ['$event'])
+  // onWindowScroll(e: any) {
+  //   if (window.outerWidth > 600 && this.location.isCurrentPathEqualTo('/')) {
+  //   const element = document.querySelector('.navbar');
+  //   const scrolledOverElement = document.querySelector('.home_hero .heading');
+  //   const sectionOneOptions = {
+  //     rootMargin: '-120px 0px 0px 0px'
+  //   };
+  //   const sectionOneObserver = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       if (!entry.isIntersecting) {
+  //         element?.classList.add('bg-dark');
+  //       } else {
+  //         element?.classList.remove('bg-dark');
+  //       }
+  //     });
+  //   }, sectionOneOptions);
 
-    if (scrolledOverElement) {
-      sectionOneObserver.observe(scrolledOverElement);
-    }
-    }
-  }
+  //   if (scrolledOverElement) {
+  //     sectionOneObserver.observe(scrolledOverElement);
+  //   }
+  //   }
+  // }
 
 
   scrollToId(id: string) {
@@ -70,10 +70,6 @@ export class NavbarComponent implements OnInit {
     } else {
       element.scrollIntoView({behavior: 'smooth', inline: 'start'});
     }
-
-    // if (id === '#contact-me') {
-    //   this.toastService.show('Hey there! Please feel free to reach out to me on LinkedIn or send me an email');
-    // }
   }
 
   showStandard(template: TemplateRef<any>) {
